@@ -1,0 +1,18 @@
+{
+    "type": "origins:target_action_on_hit",
+    "entity_action": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "effect": "minecraft:slowness",
+        "amplifier": 2,
+        "duration": 100
+      }
+    },
+    "cooldown": 400,
+    "hud_render": {
+      "should_render": true,
+      "bar_index": 5
+    },
+    "name": "Peso na Alma",
+    "description": "Eu te relembro de seus erros passados. \nAo bater em alguem ela fica com slowness."
+  }

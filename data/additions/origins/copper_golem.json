@@ -1,0 +1,17 @@
+{
+    "powers": [
+        "additions:immune_to_fall_damage",
+        "additions:copper_extra_health",
+        "additions:defense",
+        "additions:stronk",
+        "additions:smol",
+        "additions:no_food",
+        "additions:oxidation_resource",
+        "additions:oxidation_action"
+    ],
+    "name": "Copper Golem",
+    "description": "Uma maravilha da engenharia moderna!\n Tente nao mexer muito com ele, dizem que voce pode ficar CHOCADO com o que descobrir de sua origem.",
+    "icon": "minecraft:copper_ingot",
+    "impact": 3,
+    "order": 0
+}

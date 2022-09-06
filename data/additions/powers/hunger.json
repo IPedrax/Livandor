@@ -1,0 +1,9 @@
+{
+    "name": "Estomago Gigante",
+    "description": "Voce fica com fome muito mais rapido.",
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+        "operation": "multiply_total",
+        "value": 2.5
+    }
+}

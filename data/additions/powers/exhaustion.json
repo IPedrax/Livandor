@@ -1,0 +1,9 @@
+{
+    "name": "Exausto",
+    "description": "Voce fica com fome mais rapido.",
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+        "operation": "multiply_total",
+        "value": 1.2
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "replace": true,
+    "origins": [
+        "additions:blacksmith",
+        "additions:cleric",
+        "additions:cook",
+        "additions:farmer",
+        "additions:merchant",
+        "additions:rancher",
+        "additions:miner",
+        "additions:rogue",
+        "additions:warrior",
+        "additions:archer",
+        "additions:beastmaster",
+        "additions:lumberjack",
+        "additions:explorer",
+        "additions:nitwit",
+        "additions:taker"
+    ]
+}

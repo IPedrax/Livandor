@@ -1,0 +1,26 @@
+{
+    "name": "Nostalgia Infernal",
+    "description": "Voce ganha regen quando esta perto de tijolos do nether.",
+    "condition": {
+        "type": "origins:block_in_radius",
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:nether_bricks"
+        },
+        "radius": 25,
+        "shape": "square",
+        "comparison": ">=",
+        "compare_to": 1
+    },
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 1,
+    "duration_per_stack": 40,
+    "effect": {
+        "effect": "minecraft:regeneration",
+        "duration": 100,
+        "amplifier": 1,
+        "show_particles": true,
+        "show_icon": true
+    }
+}

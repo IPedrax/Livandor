@@ -1,0 +1,11 @@
+{
+  "powers": [
+    "origins-classes:tree_felling",
+    "origins-classes:more_planks_from_logs"
+  ],
+  "name": "Lenhador",
+  "description": "Com apenas uma tora, ele faz mais tábuas que qualquer um faria.",
+  "icon": "minecraft:iron_axe",
+  "order": 4,
+  "impact": 0
+}

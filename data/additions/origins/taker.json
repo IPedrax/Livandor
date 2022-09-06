@@ -1,0 +1,23 @@
+{
+  "powers": [
+      "additions:more_tnt",
+      "origins-classes:sneaky",
+      "origins-classes:stealth",
+      "origins-classes:stealth_descriptor",
+      "origins-classes:quality_equipment",
+      "origins-classes:efficient_repairs",
+      "additions:pacific",
+      "origins-classes:longer_potions",
+      "origins-classes:better_enchanting",
+      "origins:aqua_affinity",
+      "origins-classes:trade_availability",
+      "origins-classes:rare_wandering_loot",
+      "origins:elytra"
+  ],
+  "name": "Taker",
+  "description": "Yes, sir!",
+  "icon": "minecraft:snow",
+  "order": 9,
+  "impact": 0,
+  "unchoosable": true
+}

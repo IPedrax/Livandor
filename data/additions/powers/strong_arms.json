@@ -1,0 +1,10 @@
+{
+  "type": "origins:modify_harvest",
+  "allow": true,
+  "block_condition": {
+    "type": "origins:in_tag",
+    "tag": "origins:natural_stone"
+  },
+  "name": "Braços Fortes",
+  "description": "Só o braço direito forte? Eu realmente não quero saber que tipo de treino ele fez... \nVocê pode quebrar pedra na mão."
+}

@@ -1,0 +1,104 @@
+{
+	"name": "Transporte sombrio",
+	"description": "Agora estou aqui, agora não estou mais. \nCom sua crossbow na sua mão esquerda, você teleporta junto a sua flecha.",
+	
+	"type": "origins:multiple",
+	
+	"arrow_owner": {
+		"type": "origins:action_over_time",
+		"interval": 1,
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:execute_command",
+					"command": "execute as @e[type=arrow] store result score @s OwnerUUID_1 run data get entity @s Owner[0]",
+					"permission_level": 2
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "execute as @e[type=arrow] store result score @s OwnerUUID_2 run data get entity @s Owner[1]",
+					"permission_level": 2
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "execute as @e[type=arrow] store result score @s OwnerUUID_3 run data get entity @s Owner[2]",
+					"permission_level": 2
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "execute as @e[type=arrow] store result score @s OwnerUUID_4 run data get entity @s Owner[3]",
+					"permission_level": 2
+				}
+			]
+		}
+	},
+	
+	"teleport": {
+		"type": "origins:action_over_time",
+		"interval": 1,
+		"condition": {
+			"type": "origins:equipped_item",
+			"equipment_slot": "offhand",
+			"item_condition": {
+				"type": "origins:ingredient",
+				"ingredient": {
+					"item": "minecraft:crossbow"
+				}
+			}
+		},
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:execute_command",
+					"command": "execute as @e[type=minecraft:arrow,nbt={inGround:0b,ShotFromCrossbow:1b},tag=!tped,tag=!Masked] if score @s OwnerUUID_1 = @p[tag=Masked] UUID_1 if score @s OwnerUUID_2 = @p[tag=Masked] UUID_2 if score @s OwnerUUID_3 = @p[tag=Masked] UUID_3 if score @s OwnerUUID_4 = @p[tag=Masked] UUID_4 run tag @s add Masked",
+					"permission_level": 2
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "execute at @e[type=minecraft:arrow,nbt={inGround:1b},tag=!tped,tag=Masked] run summon origins:enderian_pearl ~ ~ ~ {Tags:['Masked']}",
+					"permission_level": 2
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "execute as @e[type=origins:enderian_pearl,tag=Masked] at @s run data modify entity @s Owner set from entity @e[type=arrow,sort=nearest,limit=1] Owner",
+					"permission_level": 2
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "execute as @e[type=origins:enderian_pearl,tag=Masked] at @s run tag @e[type=minecraft:arrow,sort=nearest,limit=1] add tped",
+					"permission_level": 2
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "execute as @e[type=minecraft:arrow,tag=tped] at @s run data modify entity @s pickup set value 2b",
+					"permission_level": 2
+				}
+			]
+		}
+	},
+	
+	"bad_luck_chance": {
+		"type": "origins:action_over_time",
+		"interval": 5,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:status_effect",
+					"effect": "minecraft:unluck"
+				}
+			]
+		},
+		"entity_action": {
+			"type": "origins:chance",
+			"chance": 0.3,
+			"action": {
+				"type": "origins:execute_command",
+				"command": "execute at @s as @e[type=minecraft:arrow,nbt={inGround:0b,ShotFromCrossbow:1b},distance=..25,tag=Masked] run kill @s",
+				"permission_level": 2
+			}
+		}
+	}
+}

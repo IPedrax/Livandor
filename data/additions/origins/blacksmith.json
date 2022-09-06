@@ -1,0 +1,11 @@
+{
+  "powers": [
+    "origins-classes:quality_equipment",
+    "origins-classes:efficient_repairs"
+  ],
+  "name": "Ferreiro",
+  "description": "Um artesão habilidoso, nas mãos dele até lenha se torna uma arma.",
+  "icon": "minecraft:iron_ingot",
+  "order": 6,
+  "impact": 0
+}

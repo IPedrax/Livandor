@@ -1,0 +1,9 @@
+{
+    "name": "Casa sobre almas",
+    "description": "Voce spawna no Soul Sand Valley no Nether.",
+    "type": "origins:modify_player_spawn",
+    "dimension": "minecraft:the_nether",
+    "biome": "minecraft:soul_sand_valley",
+    "spawn_strategy": "default",
+    "dimension_distance_multiplier": 1
+}

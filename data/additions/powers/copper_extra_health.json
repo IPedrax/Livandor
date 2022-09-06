@@ -1,0 +1,10 @@
+{
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.max_health",
+        "operation": "addition",
+        "value": 4
+    },
+    "name": "Resistencia Metalica",
+    "description": "Voce tem 12 coracoes."
+}

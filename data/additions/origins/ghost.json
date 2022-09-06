@@ -1,0 +1,18 @@
+{
+	"powers": [
+		"additions:phantomize",
+		"additions:translucent",
+		"additions:invisibility",
+		"additions:hitslow",
+		"additions:undead",
+		"additions:trauma",
+		"additions:nvision"
+	],
+	"icon": {
+		"item": "minecraft:ghast_tear"
+	},
+	"name": "Assombração",
+    "description": "Eu estava aqui o tempo todo, só você não viu.",
+	"order": 28,
+	"impact": 2
+}

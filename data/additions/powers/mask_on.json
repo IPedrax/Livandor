@@ -1,0 +1,152 @@
+{
+	"name": "Dentre as árvores",
+	"description": "Passando no pau ein? \nAo ativar sua habilidade colocando sua mascara você consegue atravessar todos os tipos madeiras e folhas, você fica mais forte, rápido, pula mais alto e com mais resistência.",
+	
+	"type": "origins:multiple",
+	
+	"pumpkin_mask": {
+		"type": "origins:action_over_time",
+		"interval": 5,
+		"rising_action": {
+			"type": "origins:execute_command",
+			"command": "replaceitem entity @s armor.head minecraft:player_head{HideFlags:63,Enchantments:[{lvl:1,id:'minecraft:binding_curse'}],SkullOwner:{Id:[I;870256038,-1205516226,-1748899586,-1605019433],Properties:{textures:[{Value:'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODNmODI2OTZlYTBhYTA2NTBiMWMwYzcxMDViYmQ5M2I3OGNhMjZhZTQ0YjgwYmNlYWM5N2E0YTAxM2U4NjNhMiJ9fX0='}]}}}",
+			"permission_level": 2
+		},
+		"falling_action": {
+			"type": "origins:execute_command",
+			"command": "replaceitem entity @s armor.head air",
+			"permission_level": 2
+		},
+		"condition": {
+			"type": "origins:power_active",
+			"power": "*:mask_toggle"
+		}
+	},
+	
+	"phasing": {
+		"type": "origins:phasing",
+		"blacklist": false,
+		"render_type": "blindness",
+		"view_distance": 20,
+		"block_condition": {
+			"type": "origins:or",
+			"conditions": [
+				{
+					"type": "origins:in_tag",
+					"tag": "minecraft:logs_that_burn"
+				},
+				{
+					"type": "origins:in_tag",
+					"tag": "minecraft:leaves"
+				},
+				{
+					"type": "origins:in_tag",
+					"tag": "minecraft:climbable"
+				},
+				{
+					"type": "origins:block",
+					"block": "minecraft:bamboo"
+				},
+				{
+					"type": "origins:block",
+					"block": "minecraft:bamboo_sapling"
+				},
+				{
+					"type": "origins:block",
+					"block": "minecraft:cocoa"
+				}
+			]
+		},
+		"phase_down_condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:sneaking"
+				},
+				{
+					"type": "origins:on_block"
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:power_active",
+			"power": "*:mask_toggle"
+		}
+	},
+	
+	"knockback_resistance": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.knockback_resistance",
+			"operation": "addition",
+			"value": 0.4,
+			"name": "Mask on equals wearing full netherite knockback resistance."
+		},
+		"tick_rate": 10,
+		"condition": {
+			"type": "origins:power_active",
+			"power": "*:mask_toggle"
+		}
+	},
+	
+	"less_fall_damage": {
+		"type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "fall"
+		},
+		"modifier": {
+			"operation": "multiply_total",
+			"value": -0.9
+		},
+		"condition": {
+			"type": "origins:power_active",
+			"power": "*:mask_toggle"
+		}
+	},
+	
+	"effects_when_masked": {
+		"type": "origins:stacking_status_effect",
+		"min_stacks": 1,
+		"max_stacks": 1,
+		"duration_per_stack": 35,
+		"effects": [
+			{
+				"effect": "minecraft:resistance",
+				"is_ambient": true,
+				"show_particles": false,
+				"show_icon": false
+			},
+			{
+				"effect": "minecraft:strength",
+				"is_ambient": true,
+				"show_particles": false,
+				"show_icon": false
+			},
+			{
+				"effect": "minecraft:blindness",
+				"is_ambient": true,
+				"show_particles": false,
+				"show_icon": false
+			},
+			{
+				"effect": "minecraft:jump_boost",
+				"amplifier": 2,
+				"is_ambient": true,
+				"show_particles": false,
+				"show_icon": false
+			},
+			{
+				"effect": "minecraft:speed",
+				"amplifier": 3,
+				"is_ambient": true,
+				"show_particles": false,
+				"show_icon": false
+			}
+		],
+		"condition": {
+			"type": "origins:power_active",
+			"power": "*:mask_toggle"
+		}
+	}
+}

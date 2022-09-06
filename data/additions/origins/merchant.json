@@ -1,0 +1,12 @@
+{
+  "powers": [
+    "origins-classes:trade_availability",
+    "origins-classes:rare_wandering_loot",
+    "additions:100off"
+  ],
+  "name": "Mercador",
+  "description": "Construa seu império a base de jóias verdes, é dificil ser pobre quando se é um mercador.",
+  "icon": "minecraft:emerald",
+  "order": 8,
+  "impact": 0
+}

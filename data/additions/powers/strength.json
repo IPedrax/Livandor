@@ -1,0 +1,15 @@
+{
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 10,
+    "duration_per_stack": 20,
+    "effects": {
+        "effect": "minecraft:strength",
+        "amplifier": 2,
+        "is_ambient": true,
+        "show_icon": true,
+        "show_particles": false
+    },
+    "name": "Força SobreHumana",
+    "description": "Não mexa com ele. \nVocê é mais forte."
+}

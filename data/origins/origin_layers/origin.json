@@ -1,0 +1,11 @@
+{
+    "replace": false,
+    "origins": [
+        "additions:goat",
+        "additions:masked",
+        "additions:giant",
+        "additions:ghost",
+        "additions:copper_golem",
+        "additions:witherborn"
+    ]
+}

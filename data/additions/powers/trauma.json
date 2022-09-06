@@ -1,0 +1,6 @@
+{
+  "type": "origins:prevent_sleep",
+  "message": "Você não sente sono.",
+  "name": "Trauma",
+  "description": "É melhor não relembrar aquela noite... \nVocê não consegue dormir a noite."
+}

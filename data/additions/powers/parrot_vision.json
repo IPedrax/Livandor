@@ -1,0 +1,51 @@
+{
+	"name": "Visão de Papagaio",
+	"description": "Amigo de confiança. \nTer um papagaio em seu ombro lhe permite sentir o perigo em sua volta.",
+	
+	"type": "origins:multiple",
+	
+	"parrot_gives_night_vision": {
+		"type": "origins:stacking_status_effect",
+		"min_stacks": 1,
+		"max_stacks": 1,
+		"duration_per_stack": 15,
+		"effect": {
+			"effect": "minecraft:night_vision",
+			"is_ambient": true,
+			"show_particles": false,
+			"show_icon": false
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:command",
+					"command": "data get entity @s ShoulderEntityLeft.id",
+					"comparison": "==",
+					"compare_to": 16
+				},
+				{
+					"type": "origins:power_active",
+					"power": "*:mask_toggle"
+				}
+			]
+		}
+	},
+	
+	"entity_glow_when_night_vision": {
+		"type": "origins:entity_glow",
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:status_effect",
+					"effect": "minecraft:night_vision"
+				},
+				{
+					"type": "origins:power_active",
+					"power": "*:mask_toggle"
+				}
+			]
+		}
+	}
+}

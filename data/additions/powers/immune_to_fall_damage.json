@@ -1,0 +1,9 @@
+{
+    "type": "origins:invulnerability",
+    "damage_condition": {
+        "type": "origins:name",
+        "name": "fall"
+    },
+    "name": "Juntas Fortes",
+    "description": "Voce foi muito bem construido pela Nokia, e não se quebra ao cair."
+}

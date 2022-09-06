@@ -1,0 +1,11 @@
+{
+    "type": "origins:attribute",
+    "modifier": {
+        "name": "Max health increase",
+        "attribute": "minecraft:generic.max_health",
+        "value": -4,
+        "operation": "addition"
+    },
+    "name": "Menos vida",
+    "description": "Eu não tenho chifres no corpo todo. \nVocê tem 2 corações de vida a menos."
+}

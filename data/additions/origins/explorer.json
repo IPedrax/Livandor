@@ -1,0 +1,11 @@
+{
+  "powers": [
+    "origins-classes:explorer_kit",
+    "origins-classes:no_sprint_exhaustion"
+  ],
+  "name": "Explorador",
+  "description": "Sinta a sensação de estar viajando, mas nunca se enjoe dela.",
+  "icon": "minecraft:compass",
+  "order": 9,
+  "impact": 0
+}

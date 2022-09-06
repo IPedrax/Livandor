@@ -1,0 +1,11 @@
+{
+  "type": "origins:prevent_item_use",
+  "item_condition": {
+    "type": "origins:ingredient",
+    "ingredient": {
+      "tag": "origins:shields"
+    }
+  },
+  "name": "Sem Treinamento",
+  "description": "Eu treinei muito só um braço. \nVocê não pode usar escudo."
+}

@@ -1,0 +1,11 @@
+{
+  "powers": [
+    "origins-classes:longer_potions",
+    "origins-classes:better_enchanting"
+  ],
+  "name": "Clerigo",
+  "description": "Quem segue por esse caminho com certeza recebeu um dom, mas não se sabe de quem.",
+  "icon": "minecraft:potion",
+  "order": 7,
+  "impact": 0
+}

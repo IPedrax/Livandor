@@ -1,0 +1,11 @@
+{
+  "powers": [
+    "origins-classes:more_attack_damage",
+    "origins-classes:less_shield_slowdown"
+  ],
+  "name": "Guerreiro",
+  "description": "Um rapaz forte e honrado, habilidoso com qualquer coisa com potencial de machucar.",
+  "icon": "minecraft:iron_sword",
+  "order": 10,
+  "impact": 0
+}

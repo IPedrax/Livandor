@@ -1,0 +1,15 @@
+{
+    "powers": [
+        "origins:fall_immunity",
+        "additions:jump_boost",
+        "additions:goat_dash",
+        "additions:goat_dash_damage",
+        "origins:vegetarian",
+        "additions:goat_less_health"
+    ],
+    "name": "Cabra",
+    "description": "BHEEEEE",
+    "impact": 2,
+    "icon": "minecraft:golden_carrot",
+    "order": 35
+}

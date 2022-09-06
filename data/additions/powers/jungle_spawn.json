@@ -1,0 +1,36 @@
+{
+	"name": "OrangoMano",
+	"description": "Nego bom não se mistura. \nVocê começa na Jungle.",
+	
+	"type": "origins:multiple",
+	
+	"jungle_spawn": {
+		"type": "origins:modify_player_spawn",
+		"dimension": "minecraft:overworld",
+		"biome": "minecraft:jungle"
+	},
+	
+	"callbacks": {
+		"type": "origins:action_on_callback",
+		"entity_action_chosen": {
+			"type": "origins:execute_command",
+			"command": "tag @s add Masked",
+			"permission_level": 2
+		},
+		"entity_action_added": {
+			"type": "origins:execute_command",
+			"command": "tag @s add Masked",
+			"permission_level": 2
+		},
+		"entity_action_lost": {
+			"type": "origins:execute_command",
+			"command": "tag @s remove Masked",
+			"permission_level": 2
+		},
+		"entity_action_removed": {
+			"type": "origins:execute_command",
+			"command": "tag @s remove Masked",
+			"permission_level": 2
+		}
+	}
+}

@@ -1,0 +1,15 @@
+{
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 1,
+    "max_stacks": 1,
+    "duration_per_stack": 20,
+    "effects": {
+        "effect": "minecraft:jump_boost",
+        "amplifier": 4,
+        "is_ambient": true,
+        "show_icon": false,
+        "show_particles": false
+    },
+    "name": "Pernas treinadas",
+    "description": "Eu treinei muito meus gluteos. \nVocê pula mais alto que um humano normal."
+}

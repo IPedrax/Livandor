@@ -1,0 +1,12 @@
+{
+  "powers": [
+    "origins-classes:more_crop_drops",
+    "origins-classes:better_bone_meal"
+    
+  ],
+  "name": "Fazendeiro",
+  "description": "O melhor no que faz, dizem que suas colheitas são as mais fartas de toda Livandor.",
+  "icon": "minecraft:wheat",
+  "order": 1,
+  "impact": 0
+}

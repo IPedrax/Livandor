@@ -1,0 +1,65 @@
+{
+	"hidden": true,
+	"name": "Owner_UUID",
+	"description": "Creates Owner UUID of entities as four scoreboard scores for easy access for various origin powers.",
+	
+	"type": "origins:multiple",
+	
+	"chosen": {
+		"type": "origins:action_on_callback",
+		"entity_action_chosen": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:execute_command",
+					"command": "scoreboard objectives add OwnerUUID_1 dummy",
+					"permission_level": 2
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "scoreboard objectives add OwnerUUID_2 dummy",
+					"permission_level": 2
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "scoreboard objectives add OwnerUUID_3 dummy",
+					"permission_level": 2
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "scoreboard objectives add OwnerUUID_4 dummy",
+					"permission_level": 2
+				}
+			]
+		}
+	},
+	
+	"added": {
+		"type": "origins:action_on_callback",
+		"entity_action_added": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:execute_command",
+					"command": "scoreboard objectives add OwnerUUID_1 dummy",
+					"permission_level": 2
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "scoreboard objectives add OwnerUUID_2 dummy",
+					"permission_level": 2
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "scoreboard objectives add OwnerUUID_3 dummy",
+					"permission_level": 2
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "scoreboard objectives add OwnerUUID_4 dummy",
+					"permission_level": 2
+				}
+			]
+		}
+	}
+}

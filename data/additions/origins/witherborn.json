@@ -1,0 +1,22 @@
+{
+    "name": "Wither",
+    "description": "Um esqueleto negro como a noite, ele tras o chaos consigo e esta em busca de seus direitos.",
+    "powers": [
+        "origins:water_vulnerability",
+        "additions:nether_heat",
+        "additions:nether_nostalgia",
+        "additions:unfamiliar_land",
+        "additions:fire_immunity",
+        "origins:carnivore",
+        "additions:nether_inhabitant",
+        "additions:wither_immunity",
+        "additions:overworld_loss",
+        "additions:exhaustion"
+    ],
+    "icon": {
+        "item": "minecraft:wither_skeleton_skull"
+    },
+    "order": 10,
+    "impact": 3,
+    "loading_priority": 1
+}

@@ -1,0 +1,26 @@
+{
+	"type": "extraorigins:mob_neutrality",
+	"entity_types": [
+		"minecraft:zombie",
+		"minecraft:zombie_villager",
+		"minecraft:skeleton",
+		"minecraft:husk",
+		"minecraft:stray",
+		"minecraft:wither_skeleton",
+		"minecraft:zoglin",
+		"minecraft:drowned",
+		"minecraft:ghast",
+		"minecraft:enderman",
+		"minecraft:zombified_piglin",
+		"minecraft:spider",
+		"minecraft:cave_spider",
+		"minecraft:creeper",
+		"minecraft:hoglin",
+		"minecraft:blaze",
+		"minecraft:magma_cube",
+		"minecraft:slime",
+		"minecraft:drowned",
+		"minecraft:piglin_brute"
+	],
+	"hidden": true
+}

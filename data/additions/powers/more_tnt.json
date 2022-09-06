@@ -1,0 +1,15 @@
+{
+  "type": "origins-classes:craft_amount",
+  "item_condition": {
+    "type": "origins:ingredient",
+    "ingredient": {
+      "item": "minecraft:tnt"
+    }
+  },
+  "modifier": {
+    "operation": "addition",
+    "value": 1
+  },
+  "name": "Precaução",
+  "description": "Se não der certo na primeira, tente explodir de novo!"
+}

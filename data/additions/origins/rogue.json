@@ -1,0 +1,12 @@
+{
+  "powers": [
+    "origins-classes:sneaky",
+    "origins-classes:stealth",
+    "origins-classes:stealth_descriptor"
+  ],
+  "name": "Ladino",
+  "description": "Mãos tão leves quanto quanto o peso em sua conciencia.",
+  "icon": "minecraft:leather_helmet",
+  "order": 12,
+  "impact": 0
+}

@@ -1,0 +1,102 @@
+{
+	"name": "Experiencia Própria",
+	"description": "Quem brinca com fogo, mija na cama. \nVocê toma o dobro de dano de fogo, lava, raios, explosões e fogos de artificios.",
+	
+	"type": "origins:multiple",
+	
+	"more_infire_damage": {
+		"type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "inFire"
+		},
+		"modifier": {
+			"operation": "multiply_total",
+			"value": 1
+		}
+	},
+	
+	"more_onfire_damage": {
+		"type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "onFire"
+		},
+		"modifier": {
+			"operation": "multiply_total",
+			"value": 1
+		}
+	},
+	
+	"more_lighting_damage": {
+		"type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "olightningBolt"
+		},
+		"modifier": {
+			"operation": "multiply_total",
+			"value": 1
+		}
+	},
+	
+	"more_lava_damage": {
+		"type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "lava"
+		},
+		"modifier": {
+			"operation": "multiply_total",
+			"value": 1
+		}
+	},
+	
+	"more_magmablock_damage": {
+		"type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "hotFloor"
+		},
+		"modifier": {
+			"operation": "multiply_total",
+			"value": 1
+		}
+	},
+	
+	"more_firework_damage": {
+		"type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "fireworks"
+		},
+		"modifier": {
+			"operation": "multiply_total",
+			"value": 1
+		}
+	},
+	
+	"more_explosion_damage": {
+		"type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "onFire"
+		},
+		"modifier": {
+			"operation": "multiply_total",
+			"value": 1
+		}
+	},
+	
+	"more_playerexplosion_damage": {
+		"type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "explosion.player"
+		},
+		"modifier": {
+			"operation": "multiply_total",
+			"value": 1
+		}
+	}
+}

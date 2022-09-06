@@ -1,0 +1,11 @@
+{
+  "powers": [
+    "origins-classes:better_crafted_food",
+    "origins-classes:more_smoker_xp"
+  ],
+  "name": "Cozinheiro",
+  "description": "Frito, cozinhado ou assado, de qualquer forma tudo que ele faz é maravilhoso.",
+  "icon": "minecraft:rabbit_stew",
+  "order": 5,
+  "impact": 0
+}

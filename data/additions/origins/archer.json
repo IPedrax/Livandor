@@ -1,0 +1,11 @@
+{
+  "powers": [
+    "origins-classes:no_projectile_divergence",
+    "origins-classes:less_bow_slowdown"
+  ],
+  "name": "Arqueiro",
+  "description": "Com uma mira certeira e mãos agéis, ele tem tudo para ganhar com um unico disparo.",
+  "icon": "minecraft:bow",
+  "order": 11,
+  "impact": 0
+}

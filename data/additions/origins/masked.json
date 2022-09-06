@@ -1,0 +1,20 @@
+{
+	"powers": [
+		"additions:player_uuid",
+		"additions:owner_uuid",
+		"additions:jungle_spawn",
+		"additions:mask_toggle",
+		"additions:mask_on",
+		"additions:parrot_vision",
+		"additions:cape_landing",
+		"additions:warping_shadow",
+		"additions:fear_of_the_flames",
+		"additions:full_iron_no_helmet",
+		"additions:anthropophobia"
+    ],
+    "icon": "minecraft:vine",
+    "order": 11,
+    "impact": 3,
+	"name": "Maskarado",
+	"description": "Bixo do mato, perigoso tome cuidado."
+}

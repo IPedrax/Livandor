@@ -1,0 +1,28 @@
+{
+    "name": "Sangue Fervente",
+    "description": "Voce ganha força e velocidade no Nether",
+    "condition": {
+        "type": "origins:dimension",
+        "dimension": "minecraft:the_nether"
+    },
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 300,
+    "duration_per_stack": 20,
+    "effect": {
+        "effect": "minecraft:speed",
+        "duration": 100,
+        "amplifier": 1,
+        "show_particles": true,
+        "show_icon": true
+    },
+    "effects": [
+        {
+            "effect": "minecraft:strength",
+            "duration": 100,
+            "amplifier": 1,
+            "show_particles": true,
+            "show_icon": true
+        }
+    ]
+}

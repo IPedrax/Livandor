@@ -1,0 +1,14 @@
+{
+    "name": "Perda do outro mundo",
+    "description": "Voce ganha menos xp se estiver fora do Nether.",
+    "condition": {
+        "inverted": true,
+        "type": "origins:dimension",
+        "dimension": "minecraft:the_nether"
+    },
+    "type": "origins:modify_xp_gain",
+    "modifier": {
+        "operation": "multiply_total",
+        "value": -0.66
+    }
+}

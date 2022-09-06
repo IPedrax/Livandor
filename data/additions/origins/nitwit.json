@@ -1,0 +1,9 @@
+{
+  "powers": [
+  ],
+  "name": "Tolo",
+  "description": "Uma jogatina normal de Minecraft",
+  "icon": "minecraft:green_wool",
+  "order": 0,
+  "impact": 0
+}

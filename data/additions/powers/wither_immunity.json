@@ -1,0 +1,6 @@
+{
+    "name": "Imunidade Wither",
+    "description": "Voce e imune ao seu proprio efeito, nao?. ",
+    "type": "origins:effect_immunity",
+    "effect": "minecraft:wither"
+}
